@@ -1,0 +1,36 @@
+Alice and Bob  devised a new way of encrypting messages. They first decide  on the number of columns and write the message (letters only) down the columns, padding with extra random letters so as to make a rectangular array of letters. For example, if the message is “There’s no place like home on a snowy night” and there are five columns, Alice would write down
+
+t o i o y
+h p k n n
+e l e a i
+r a h s g
+e c o n h
+s e m o t
+n l e w x
+
+Note that 'Alice' includes only letters and writes them all in lower case. In this example, Alice used the character ‘x’ to pad the message out to make a rectangle, although he could have used any letter. Alice then sends the message to Bob by writing the letters in each row, alternating left-to-right and right-to-left. So, the above would be encrypted as
+
+toioynnkpheleaigshareconhtomesnlewx
+Your job is to recover for Bob the original message (along with any extra padding letters) from the encrypted one.
+
+Input format
+An integer indicating the number of columns used and a string lower case letters.
+
+
+Example
+
+1.)
+
+Input
+{5, toioynnkpheleaigshareconhtomesnlewx}
+
+Output
+theresnoplacelikehomeonasnowynightx
+
+2.)
+
+Input
+{3, ttyohhieneesiaabss}
+
+Output:
+thisistheeasyoneab
